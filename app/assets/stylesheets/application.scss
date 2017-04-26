@@ -15,6 +15,8 @@
  *= require_self
  */
 
+
+
 body {
   padding: 0;
   margin: 0;
@@ -49,6 +51,12 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+    .main-text {
+        font-size: 40px !important
+    }
+}
+
 .container {
   margin: 20px;
   padding: 20px;
@@ -59,6 +67,12 @@ body {
 .div-one {
   min-height: 400px;
   color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+    .para-one, .para-two {
+        width: 100% !important
+    }
 }
 
 .para-one {
@@ -89,6 +103,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 400px) {
+    .menu li {
+        display: list-item !important
+    }
+}
+
  
 .menu li:last-child {
   margin-right:0px;
